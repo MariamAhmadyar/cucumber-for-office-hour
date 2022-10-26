@@ -13,7 +13,7 @@ import static com.cydeo.utilities.BrowserUtils.sleep;
 public class RadioButtonStepDefs {
 
 
-    RadioButtonPage radioButtonPage = new RadioButtonPage();
+   RadioButtonPage radioButtonPage = new RadioButtonPage();
 
     @Given("the user go to the web page")
     public void the_user_go_to_the_web_page() {
@@ -30,7 +30,8 @@ public class RadioButtonStepDefs {
     @When("the user clicks the Hockey")
     public void the_user_clicks_the_hockey() {
         sleep(2);
-        radioButtonPage.radioButtonForHockey.click();
+   radioButtonPage.radioButtonForHockey.click();
+
     }
 
     @Then("the user verify the hockey is checked")
