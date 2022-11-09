@@ -23,10 +23,10 @@ public class DashboardPage {
     public List<WebElement> modules;
 
 
-    public List<String> getModulesText(){
+    public List<String> getModulesText() {
 
-        List<String> modulesText=new ArrayList<>();
-        for (int i = 0; i < modules1.size()-1; i++) {
+        List<String> modulesText = new ArrayList<>();
+        for (int i = 0; i < modules1.size() - 1; i++) {
 
             BrowserUtils.hover(modules1.get(i));
             BrowserUtils.sleep(1);
@@ -34,6 +34,22 @@ public class DashboardPage {
 
         }
         return modulesText;
+
+    }
+
+    public void clickModulesWithText(String moduleName) {
+
+        for (int i = 0; i < modules1.size() - 1; i++) {
+
+            BrowserUtils.hover(modules1.get(i));
+            BrowserUtils.sleep(1);
+            if (modules1.get(i).getText().equals(moduleName)) {
+                BrowserUtils.clickElement(modules1.get(i));
+                break;
+            }
+
+        }
+
 
     }
 

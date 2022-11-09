@@ -508,6 +508,26 @@ public class BrowserUtils {
         Assert.assertTrue(Driver.getDriver().getTitle().contains(title));
     }
 
+    public static void clickWithSpecificText(List<WebElement> elements,String text){
+        for (WebElement element : elements) {
+            if (element.getText().equals(text)){
+                clickElement(element);
+                break;
+            }
+
+        }
+    }
+    public static boolean isAllSelected(List<WebElement> allFiles){
+
+        for (WebElement file : allFiles) {
+
+            if(!file.isSelected()){
+                return false;
+            }
+        }
+        return true;
+    }
+
 
 
 }
