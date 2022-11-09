@@ -19,6 +19,10 @@ public class DashboardPage {
     public List<WebElement> modules1;
 
 
+    @FindBy(xpath = "//ul[@id='appmenu']/li[@id='more-apps']/preceding-sibling::li")
+    public List<WebElement> modules;
+
+
     public List<String> getModulesText(){
 
         List<String> modulesText=new ArrayList<>();
