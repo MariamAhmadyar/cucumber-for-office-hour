@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         glue = "com/cydeo/step_definitions",
         features = "src/test/resources/features",
-        tags = "@us_01",
+        tags = "@us_03",
         dryRun = false
 
 
