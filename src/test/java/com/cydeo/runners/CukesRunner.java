@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         glue = "com/cydeo/step_definitions",
         features = "src/test/resources/features",
         tags = "@us_01",
-        dryRun = true
+        dryRun = false
 
 
 )
