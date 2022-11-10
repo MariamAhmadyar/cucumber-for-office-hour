@@ -21,6 +21,8 @@ public class DashboardStepDefs {
 
         //   List<String> actualModuleNames = new DashboardPage().getModulesText();
         //   Assert.assertEquals(expectedModuleNames,actualModuleNames);
+
+
         Assert.assertEquals(expectedModuleNames, BrowserUtils.getElementsText(new DashboardPage().modules));
 
     }
